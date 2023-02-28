@@ -1,13 +1,10 @@
 /*GENERELLE REGLER*/
 * {
+  margin: 0;
 }
-
 /*SKRIFTREGLER*/
 h1 {
   font-size: 3vw;
-}
-
-h2 {
 }
 
 h3 {
@@ -50,14 +47,19 @@ nav a {
 #forside {
   background-image: url(images/bigphoto.png);
   background-size: cover;
-  background-position-y: 37%;
+  background-position-y: 100%;
   background-repeat: no-repeat;
 }
 
 #forsidetekst {
   width: 37%;
   margin-left: 7.6%;
-  padding-top: 8%;
+  padding-top: 10%;
+}
+
+#forsidetekst h3 {
+  padding-top: 5%;
+  padding-bottom: 8%;
 }
 
 #forsideknap {
@@ -67,105 +69,107 @@ nav a {
 
   padding: 3.5%;
   margin-top: 5%;
+  margin-bottom: 47.2%;
 
   border-radius: 20px;
   border: #db2e27;
+  cursor: pointer;
 }
-
-
 
 /* FOOTER */
 
 /* Ikonerne i footeren */
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100px;
-    background-color: #DB2E27;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  background-color: #db2e27;
+  padding-top: 20px;
+}
 
-  /* Ikonerne i footeren */
-  .footer ul {
-    display: flex;
-    justify-content: center;
-    margin-left: -40px;
-  }
-  .footer ul li {
-    list-style: none;
-    width: 70px;
-    height: 70px;
-  }
-  .footer ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .footer ul li a .ikon {
-    line-height: 75px;
-    font-size: 25pt;
-    transition: 0.5s;
-    color: white;
-  }
-  .footer ul li:hover a .ikon {
-    transform: translateY(-25px);
-    color: white;
-  }
-  .footer ul li a .footertekst {
-    position: absolute;
-    font-weight: 400;
-    font-size: 10pt;
-    letter-spacing: 0.5pt;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(20px);
-    font-family: 'Roboto Condensed', sans-serif;
-  }
-  .footer ul li:hover a .footertekst {
-    opacity: 1;
-    transform: translateY(0px);
-    color: white;
-  }
-  
-  /* Navfooter */
-  .navfooter {
-    display: flex;
-    justify-content: center;
-    background-color: #DB2E27;
-    padding-bottom: 20px;
-  }
-  .navfooter a {
-    padding-left: 25px;
-    padding-right: 25px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
-  }
+/* Ikonerne i footeren */
+.footer ul {
+  display: flex;
+  justify-content: center;
+  margin-left: -40px;
+}
+.footer ul li {
+  list-style: none;
+  width: 70px;
+  height: 70px;
+}
+.footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer ul li a .ikon {
+  line-height: 75px;
+  font-size: 25pt;
+  transition: 0.5s;
+  color: white;
+}
+.footer ul li:hover a .ikon {
+  transform: translateY(-25px);
+  color: white;
+}
+.footer ul li a .footertekst {
+  position: absolute;
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 0.5pt;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+  font-family: "Roboto Condensed", sans-serif;
+}
+.footer ul li:hover a .footertekst {
+  opacity: 1;
+  transform: translateY(0px);
+  color: white;
+}
 
-  /* Hovereffekten på navfooter */
-  .navfooter a:hover {
+/* Navfooter */
+.navfooter {
+  display: flex;
+  justify-content: center;
+  background-color: #db2e27;
+  padding-bottom: 20px;
+}
+.navfooter a {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+
+/* Hovereffekten på navfooter */
+.navfooter a:hover {
   color: black;
   transition: all 0.3s ease 0s;
-  }
+}
 
-  /* vertikal streg mellem nav i footeren */
-  .border {
+/* vertikal streg mellem nav i footeren */
+.border {
   border-right: 2px solid white;
+}
+@media only screen and (max-width: 890px) {
+  .navfooter a {
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  @media only screen and (max-width: 890px){
-    .navfooter a{
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
+}
 
 /* Copyright linjen */
-  #copyright{
-    display: flex;
-    justify-content: center;
-    background-color: #DB2E27;
-    color: rgb(215, 215, 215);
-    font-size: 10pt;
-  }
+#copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #db2e27;
+  color: rgb(215, 215, 215);
+  font-size: 10pt;
+  padding-bottom: 20px;
+}
